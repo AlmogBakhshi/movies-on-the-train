@@ -1,0 +1,20 @@
+.container {
+    @include size(100%, 100%);
+    @include scrollbar();
+    position: relative;
+
+    &__header {
+        @include flex();
+
+        &__back {
+            position: absolute;
+            left: 1em;
+            cursor: pointer;
+        }
+    }
+
+    &__body {
+        @include size(calc(100% - 2em), calc(100% - calc(62.5px + 2em)));
+        margin: 1em;
+    }
+}

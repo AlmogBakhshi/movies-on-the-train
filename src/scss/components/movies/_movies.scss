@@ -1,0 +1,17 @@
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.movie_details {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 40%;
+
+    &__button {
+        width: fit-content;
+        margin-bottom: 5px;
+    }
+}

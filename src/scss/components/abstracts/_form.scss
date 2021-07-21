@@ -1,0 +1,38 @@
+.form {
+    
+    &__container {
+        @include flex();
+        @include size(100%, 100%);
+
+        &__label {
+            margin-right: 5px;
+
+            & > * {
+              margin-bottom: 1em;  
+            }
+        }
+    }
+
+    &__button {
+        width: 50%;
+        margin: auto;
+        max-width: 30em;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 1em;
+  
+        /* Chrome, Safari, Edge, Opera */
+        &[type=number]::-webkit-outer-spin-button,
+        &[type=number]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+  
+        /* Firefox */
+        &[type=number] {
+          -moz-appearance: textfield;
+        }
+      }
+}
